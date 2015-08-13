@@ -5,6 +5,9 @@
     "keywords": ["user", "bundle", "symfony"],
     "license": "MIT",
     "minimum-stability": "stable",
+    "require": {
+        "rofil/template": "dev-master"
+    },
     "authors": [
         {
             "name": "Rofilde Hasudungan Sitorus Pane",
