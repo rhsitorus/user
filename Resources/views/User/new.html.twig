@@ -1,0 +1,20 @@
+{% extends ':Theme:two-column.html.twig' %}
+
+{% block content -%}
+    <h2>Tambah User</h2>
+	<hr>
+				<div class="row">
+    <div class="col-md-6">
+        <a href="{{ path('manage_user') }}" class="btn btn-info">Kembali Kedaftar</a>
+    </div>
+    <div class="col-md-6 text-right">
+                                            </div>
+</div>
+
+
+	<hr>
+
+    {{ form(form) }}
+
+    
+{% endblock %}

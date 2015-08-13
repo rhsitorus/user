@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    
+    <services>
+        <service id="rofil_admin_user.user_repository" 
+                    class="Rofil\Admin\UserBundle\Entity\UserRepository"
+                    factory-service="doctrine.orm.entity_manager"
+                    factory-method="getRepository">
+            <argument>RofilAdminUserBundle:User</argument>
+        </service>
+
+        <service id="rofil_admin_user.user_type" class="Rofil\Admin\UserBundle\Form\UserType"></service>
+
+        <service id="rofil_admin_user.user_custome" class="Rofil\Admin\UserBundle\UserCustome">
+            <argument type="service" id="rofil_admin_user.user_repository" />
+            <argument type="service" id="form.factory"></argument>
+            <argument type="service" id="rofil_admin_user.user_type"></argument>
+            <argument type="service" id="router"></argument>
+        </service>
+
+            
+
+        <service id="rofil_admin_user.user_controller" class="Rofil\Admin\UserBundle\Controller\UserController">
+            <argument type="service" id="service_container"></argument>
+            <argument type="service" id="rofil_admin_user.user_repository"></argument>
+            <argument type="service" id="rofil_admin_user.user_custome"></argument>
+        </service>
+    </services>
+   
+</container>
