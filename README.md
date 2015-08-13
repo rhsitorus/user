@@ -1,4 +1,6 @@
 ##Introduction
+***
+***
 ##Installation 
 ###Composer 
 ```
@@ -7,10 +9,12 @@
 and running `composer update`
 ###Register at AppKernel.php
 ```
+    ....
     new Rofil\Admin\UserBundle\RofilAdminUserBundle(),
+    ....
 ```
 
-##Configuration of Security
+##Configuration of Security at security.json
 ```
 security:
     encoders:
