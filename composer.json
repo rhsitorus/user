@@ -6,7 +6,7 @@
     "license": "MIT",
     "minimum-stability": "stable",
     "require": {
-        "rofil/template": "dev-master"
+        "rofil/template-master": "dev-master"
     },
     "authors": [
         {
