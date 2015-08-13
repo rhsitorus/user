@@ -1,0 +1,18 @@
+{
+    "name": "rofil/user",
+    "type": "symfony-bundle",
+    "description": "The default user package application",
+    "keywords": ["user", "bundle", "symfony"],
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Rofilde Hasudungan Sitorus Pane",
+            "email": "rofilde@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "Rofil\\Admin\\UserBundle": "" }
+    },
+    "target-dir": "Rofil/Admin/UserBundle"
+}
