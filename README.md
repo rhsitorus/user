@@ -1,6 +1,6 @@
 ##Introduction
-***
-***
+<!-- *** -->
+
 ##Installation 
 ###Composer 
 ```
