@@ -40,7 +40,7 @@ security:
         default:
             pattern: /.*
             form_login:
-                login_path: /login
+                login_path: /auth/login
                 check_path: /login_check
                 default_target_path: /
             logout:
