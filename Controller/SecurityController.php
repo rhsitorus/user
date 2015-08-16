@@ -33,7 +33,7 @@ class SecurityController extends Controller
 	}
 
 	/**
-	 * @ORM\Route("login_check", name="login_check")
+	 * @Route("login_check", name="login_check")
 	 */
 	public function loginCheckAction()
 	{
